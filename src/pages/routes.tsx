@@ -1,11 +1,14 @@
 import React from 'react';
-
-const routes = () => {
+import { Routes, Route} from "react-router-dom";
+import Community from './Community';
+import Feed from './Feed';
+const RouteURL = () => {
     return (
-        <div>
-            
-        </div>
+        <Routes>
+          <Route path="/" element={<Feed/>}/>
+          <Route path="/community" element={<Community/>}/>
+        </Routes>
     );
 };
 
-export default routes;
+export default RouteURL;

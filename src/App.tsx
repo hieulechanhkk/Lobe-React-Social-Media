@@ -1,12 +1,15 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Community from './pages/Community';
+import Feed from './pages/Feed';
+import RouteURL from './pages/routes';
 function App() {
-  let hihi: string = "NguyenDucHieu";
-  console.log(hihi)
   return (
-    <div className=' mx-auto'>
-    </div>
+    <Router>
+      <div className=" mx-auto">
+        <RouteURL/>
+      </div>
+    </Router>
   );
 }
-
 export default App;
